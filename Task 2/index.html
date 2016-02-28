@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Task2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">       
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/notification/normalize.css" />  	  
+        <link rel="stylesheet" type="text/css" href="css/notification/ns-default.css" />
+        <link rel="stylesheet" type="text/css" href="css/notification/ns-style-growl.css" />
+        
+        <style>
+          #table1 tbody tr:hover, #table2 tbody tr:hover
+            {
+                background-color: #eee;
+            }
+           .h1_2
+            {
+                margin-top: 30px;
+            }
+            
+           .ns-type-error
+           {
+                  background-color: red;
+           }
+           
+           a
+           {
+               cursor: pointer;
+           }
+           
+           table thead tr:first-child
+           {
+                   white-space: nowrap;
+           }          
+           
+           #table2 a i
+           {
+               margin: 7px 3px;
+           }
+                      
+        </style>    
+    </head>  
+    <body>
+        <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">КАБИНЕТ ПОЛЬЗОВАТЕЛЯ</a>
+                </div>
+              </div><!-- /.container-fluid -->
+           </nav>   
+           <div class="container"> 
+            
+            <h2 class="h1_1">Транзитные счета</h2> 
+            <table id="table1" class="table table-striped table-bordered display" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Операции</th>
+                    <th>№ счета</th>
+                    <th>Валюта</th>
+                    <th>Доступно</th>                    
+                </tr>
+            </thead>            
+            <tbody>
+                <tr>
+                    <th class="text-center"><a class="add" title="пополнить счет"><i class="fa fa-lg fa-usd"></i></a></th>
+                    <th class="number">20923412</th>
+                    <th class="currency">USD</th>
+                    <th class="currentSumm">110.00</th>                   
+                </tr>
+                <tr>
+                    <th class="text-center"><a class="add" title="пополнить счет"><i class="fa fa-lg fa-eur"></i></a></th>
+                    <th class="number">20923412</th>
+                    <th class="currency">EUR</th>
+                    <th class="currentSumm">10.13</th> 
+                </tr>
+                <tr>
+                    <th class="text-center"><a class="add" title="пополнить счет"><i class="fa fa-lg fa-rub"></i></a></th>
+                    <th class="number">20923412</th>
+                    <th class="currency">RUB</th>
+                    <th class="currentSumm">461.00</th>
+                </tr>                 
+            </tbody>
+        </table>
+            
+            <h2 class="h1_2">Торговые счета</h2>
+            <table id="table2" class="table table-striped table-bordered display" cellspacing="0" width="100%">               
+            <thead>            
+                <tr>                    
+                    <th>Операции</th>
+                    <th>№ счета</th>
+                    <th>Группа</th> 
+                    <th>Множитель</th>
+                    <th>Торговое плечо</th>
+                    <th>Валюта</th>                    
+                    <th>Доступно</th>    
+                    <th>Баланс</th>
+                    <th>Имя</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>            
+            <tbody>
+                <tr>
+                    <th class="text-center">                                                  
+                        <a class="add" title="пополнить счет"><i class="fa fa-lg fa-usd"></i></a>
+                        <a class="addName" title="изменить имя"><i class="fa fa-lg fa-edit"></i></a>
+                        <a class="addFavorites" title="добавить в избранное"><i class="fa fa-lg fa-star-o"></i></a>
+                        <a class="resetPassword" title="сбросить пароль"><i class="fa fa-lg fa-key"></i></a> 
+                        <a class="addLock" title="заблокировать счет"><i class="fa fa-lg fa-unlock"></i></a>                        
+                    </th>
+                    <th class="number">20944683</th>
+                    <th>Micro Fix</th>
+                    <th>100</th> 
+                    <th>1:100</th> 
+                    <th class="currency">USD</th>
+                    <th class="currentSumm">123.19</th> 
+                    <th class="currentBalance">134.52</th>  
+                    <th class="currentName">Счастливый счёт</th> 
+                    <th class="currentStatus"></th>                    
+                </tr>
+                <tr>
+                    <th class="text-center">                                                
+                        <a class="add" title="пополнить счет"><i class="fa fa-lg fa-usd"></i></a>
+                        <a class="addName" title="изменить имя"><i class="fa fa-lg fa-edit"></i></a>
+                        <a class="addFavorites" title="добавить в избранное"><i class="fa fa-lg fa-star"></i></a>
+                        <a class="resetPassword" title="сбросить пароль"><i class="fa fa-lg fa-key"></i></a> 
+                        <a class="addLock" title="заблокировать счет"><i class="fa fa-lg fa-unlock"></i></a>                                       
+                    </th>
+                    <th class="number">20947446</th>
+                    <th>Classic NDD</th>
+                    <th>1</th> 
+                    <th>1:30</th> 
+                    <th class="currency">USD</th>
+                    <th class="currentSumm">392.87</th> 
+                    <th class="currentBalance">560.13</th>  
+                    <th class="currentName"></th> 
+                    <th class="currentStatus favorites colorGreen">счёт избран</th> 
+                </tr>
+                <tr>
+                    <th class="text-center">                                                 
+                        <a class="add" title="пополнить счет"><i class="fa fa-lg fa-eur"></i></a>
+                        <a class="addName" title="изменить имя"><i class="fa fa-lg fa-edit"></i></a>
+                        <a class="addFavorites" title="добавить в избранное"><i class="fa fa-lg fa-star-o"></i></a>
+                        <a class="resetPassword" title="сбросить пароль"><i class="fa fa-lg fa-key"></i></a> 
+                        <a class="addLock" title="заблокировать счет"><i class="fa fa-lg fa-unlock"></i></a>                        
+                    </th>
+                    <th class="number">20929832</th>
+                    <th>Tornado STP DMA</th>
+                    <th>1</th> 
+                    <th>1:1</th> 
+                    <th class="currency">EUR</th>
+                    <th class="currentSumm">0.00</th> 
+                    <th class="currentBalance"></th>  
+                    <th class="currentName"></th> 
+                    <th class="currentStatus colorBlue">счёт не активирован и ожидает пополнения на 500.00 EUR</th>
+                </tr> 
+                <tr>
+                    <th class="text-center">                                                  
+                        <a class="add" title="пополнить счет"><i class="fa fa-lg fa-rub"></i></a>
+                        <a class="addName" title="изменить имя"><i class="fa fa-lg fa-edit"></i></a>
+                        <a class="addFavorites" title="добавить в избранное"><i class="fa fa-lg fa-star-o"></i></a>
+                        <a class="resetPassword" title="сбросить пароль"><i class="fa fa-lg fa-key"></i></a> 
+                        <a class="addLock" title="заблокировать счет"><i class="fa fa-lg fa-lock"></i></a>                       
+                    </th>
+                    <th class="number">25987432</th>
+                    <th>Classic NDD</th>
+                    <th>1</th> 
+                    <th>1:3</th> 
+                    <th class="currency">RUB</th>
+                    <th class="currentSumm">0.00</th> 
+                    <th class="currentBalance">-64.12</th>  
+                    <th class="currentName"></th> 
+                    <th class="currentStatus addLock colorRed">счёт заблокирован</th> 
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+        
+        
+<!-- modal for add transit account-->
+
+   <div class="modal fade" id="addTransit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="modal-dialog">
+       <div style ="margin-top: 100px;"  class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                
+         </div>
+         <div class="modal-body">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="account-col text-center modalNewUserStyle">
+                       <h2>Пополнить транзитный счет</h2>  
+                       <h1></h1> 
+                       <form class="m-t" role="form">
+                           <form class="form-inline">
+                                <div class="form-group">
+                                  <label class="sr-only" for="exampleInputAmount"></label>
+                                  <div class="input-group">
+                                    <div id="thisCurrency" class="input-group-addon"></div>
+                                    <input type="number" class="form-control" id="exampleInputAmount" placeholder="Введите сумму">                                   
+                                  </div>
+                                </div>                                
+                              </form>                           
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                               <button type="button" class="btn btn-primary">Подтвердить</button>
+                           </div> 
+                   </div>
+               </div>
+           </div>        
+         </div>             
+       </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+   </div><!-- /.modal -->    
+   
+   
+   <!-- ПОПОЛНЕНИЕ БАЛАНСА -->
+
+   <div class="modal fade" id="addBalance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="modal-dialog">
+       <div style ="margin-top: 100px;"  class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                
+         </div>
+         <div class="modal-body">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="account-col text-center modalNewUserStyle">
+                       <h2>Пополнить баланс</h2>  
+                       <h1></h1> 
+                       <form class="m-t" role="form">
+                           <form class="form-inline">
+                                <div class="form-group">
+                                  <label class="sr-only" for="exampleInputBalance"></label>
+                                  <div class="input-group">
+                                    <div id="thisCurrencyBalance" class="input-group-addon"></div>
+                                    <input type="number" class="form-control" id="exampleInputBalance" placeholder="Введите сумму">                                   
+                                  </div>
+                                </div>                                
+                              </form>                           
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                               <button type="button" class="btn btn-primary">Подтвердить</button>
+                           </div> 
+                   </div>
+               </div>
+           </div>        
+         </div>             
+       </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+   </div><!-- /.modal -->  
+
+
+<!-- ИЗМЕНЕНИЕ ИМЕНИ -->
+
+   <div class="modal fade" id="addName" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="modal-dialog">
+       <div style ="margin-top: 100px;"  class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                
+         </div>
+         <div class="modal-body">
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="account-col text-center modalNewUserStyle">
+                       <h2>Изменить имя для счета</h2>  
+                       <h1></h1> 
+                       <form class="m-t" role="form">
+                           <form class="form-inline">
+                                <div class="form-group">
+                                  <label class="sr-only" for="exampleInputBalance"></label>
+                                  <div class="input-group">
+                                    <div id="thisCurrencyName" class="input-group-addon"></div>
+                                    <input type="text" class="form-control" id="exampleInputName" placeholder="Введите новое имя">                                   
+                                  </div>
+                                </div>                                
+                              </form>                           
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                               <button type="button" class="btn btn-primary">Подтвердить</button>
+                           </div> 
+                   </div>
+               </div>
+           </div>        
+         </div>             
+       </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+   </div><!-- /.modal -->      
+        
+        <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>       
+        <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script> 
+        <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script> 
+        
+         <script src="js/notification/modernizr.custom.js"></script>
+         <script src="js/notification/classie.js"></script>        
+         <script src="js/notification/notificationFx.js"></script> 
+         
+        <script src="js/test2.js"></script>
+            
+    </body>
+</html>
