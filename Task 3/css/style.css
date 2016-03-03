@@ -8,6 +8,11 @@
              display: flex;
            }
            
+           .inputStyle
+           {               
+               display: block;
+           }
+           
            .nt-item-action2 
            {
              width: 90px;
