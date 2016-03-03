@@ -1,0 +1,188 @@
+ .nt-item-action1 
+           {
+             width: 90px;
+             height: 100px;
+             position: relative;
+             background-color: rgba(128, 128, 128, 0.42);;
+             float: right;
+             display: flex;
+           }
+           
+           .nt-item-action2 
+           {
+             width: 90px;
+             height: 120px;
+             position: relative;
+             background-color: rgba(128, 128, 128, 0.42);;
+             float: right;
+             display: flex;
+           }
+           
+           .nt-item
+           {              
+              -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+              box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+              -webkit-transition: all 0.4s ease;
+              transition: all 0.4s ease;
+           }
+           .nt-item:hover
+           {
+               box-shadow: 0 1px 30px 1px rgba(136, 136, 136, 0.65);
+               -webkit-box-shadow: 0 1px 30px 1px rgba(136, 136, 136, 0.65);
+            
+           }
+           .svgPicture
+           { 
+               width: 65%;
+               margin: 0 auto;
+               cursor: pointer;   
+               transition: fill 2s ease;
+           }
+           
+           .svgPicture:hover
+           {
+             /* fill: green;*/
+              animation: preloader 1.2s infinite linear;
+              transform-style: preserve-3d;               
+           }
+           
+           @keyframes preloader 
+            {
+                to 
+                { 
+                    transform: rotateY(360deg);
+                }
+            }
+           
+           .nt-item-action
+           {
+               display: flex;
+           }
+           
+           img.svgPicture
+           {
+               width: 70%;
+           }
+           
+           .nt-item-action-span
+           {
+             line-height: 1.3em;
+             margin: 0 auto;
+             font-size: 17px;             
+           }
+    
+           .nt-item
+           {              
+               list-style-type: none; 
+               margin: 30px 20px; 
+               background-color: white; 
+               float: left;
+               text-align: left; 
+               -webkit-box-shadow: 0 5px 6px 1px #888;
+               -moz-box-shadow: 0 5px 6px 1px #888;
+               box-shadow: 0 5px 6px 1px #888
+           }
+           
+           .nt-item-image
+           {
+               clear: both;
+               background: rgba(128, 128, 128, 0.18) no-repeat;
+              
+               height: 100%; 
+               position: relative               
+           }
+           
+           .text
+           {
+               font-size: 30px;
+               margin-left: 10px;
+           }
+           
+           .textSpan
+           {
+               padding-top: 30px;
+           }
+           
+           .labelStyle
+           {
+               margin-right: 5px;
+               height: 20px;
+           }
+           .textP
+           {
+               color: #636363; 
+               font-size: 11px;
+               padding-top: 30px;
+               margin-left: 20px;
+               
+           }
+           
+           .textP2
+           {
+               color: #636363; 
+               font-size: 14px;               
+               margin-left: 10px;
+               margin-right: 5px;                             
+           }
+           
+           .nt-item-synop
+           {
+               float: left; 
+               padding: 6px 10px;
+           }
+           
+           .number
+           {
+               font-size: 24px;
+           }
+           
+           .numberBillText
+           {
+              color: #1D1D1B;
+              margin: 5px 0;
+              font-size: 16px 
+           }
+           
+           .currency
+           {
+               margin-left: 10px;
+           }
+           
+           .ns-type-error
+           {
+                  background-color: red;
+           }
+           
+           .white-triangle-pointer-item 
+           {
+               width: 37px;
+               height: 19px;
+               position: absolute;
+               left: 30px;
+               top: 0;
+               background: url('../images/white_triangle_pointer.png') no-repeat center top;
+           } 
+           
+          body ul.column
+           {
+               -webkit-padding-start: 0px;            
+               margin-top: 50px;
+               text-align:center;
+           }
+           
+           li.nt-item
+           {
+               display: inline-block;
+               float: none;
+               margin-right: 4px;
+               min-width: 420px;
+           }
+           
+           a
+           {
+               cursor: pointer;
+           }
+           
+         
+           
+           
